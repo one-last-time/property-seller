@@ -2,13 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7adf1fb0-fe26-4f04-88b1-cc7e846ddc89" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/apps/profiles/signals.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/estate-src.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/estate-src.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/apps/ratings/serializers.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/apps/common/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/apps/common/models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/apps/profiles/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/apps/profiles/admin.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/apps/profiles/apps.py" beforeDir="false" afterPath="$PROJECT_DIR$/apps/profiles/apps.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/apps/profiles/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/apps/profiles/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/ratings/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/apps/ratings/admin.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/ratings/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/apps/ratings/models.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -22,20 +19,56 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="real_estate.log" pinned="false" current-in-tab="true">
+      <file leaf-file-name="real_estate.log" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/logs/real_estate.log">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="-1770" />
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="urls.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/real_estate/urls.py">
+      <file leaf-file-name="models.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/apps/ratings/models.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="390">
-              <caret line="26" column="43" selection-start-line="26" selection-start-column="43" selection-end-line="26" selection-end-column="43" />
+            <state relative-caret-position="380">
+              <caret line="30" column="5" lean-forward="true" selection-start-line="30" selection-start-column="5" selection-end-line="30" selection-end-column="5" />
               <folding>
-                <element signature="e#635#667#0" expanded="true" />
+                <element signature="e#0#28#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="models.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/apps/common/models.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="60">
+              <caret line="4" column="6" selection-start-line="4" selection-start-column="6" selection-end-line="4" selection-end-column="6" />
+              <folding>
+                <element signature="e#0#28#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="serializers.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/apps/ratings/serializers.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="240">
+              <caret line="16" column="38" lean-forward="true" selection-start-line="16" selection-start-column="38" selection-end-line="16" selection-end-column="38" />
+              <folding>
+                <element signature="e#0#39#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="admin.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/apps/ratings/admin.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="45">
+              <caret line="3" lean-forward="true" selection-start-line="3" selection-end-line="3" />
+              <folding>
+                <element signature="e#0#32#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -73,32 +106,6 @@
               <folding>
                 <element signature="e#0#32#0" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="__init__.py" pinned="false" current-in-tab="false">
-        <entry file="file://$USER_HOME$/.pyenv/versions/real_state/lib/python3.9/site-packages/django/__init__.py">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-      <file leaf-file-name="signals.py" pinned="false" current-in-tab="false">
-        <entry file="file://$USER_HOME$/.pyenv/versions/real_state/lib/python3.9/site-packages/django/db/models/signals.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="120">
-              <caret line="8" column="20" selection-start-line="8" selection-start-column="20" selection-end-line="8" selection-end-column="20" />
-              <folding>
-                <element signature="e#0#29#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="dispatcher.py" pinned="false" current-in-tab="false">
-        <entry file="file://$USER_HOME$/.pyenv/versions/real_state/lib/python3.9/site-packages/django/dispatch/dispatcher.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1175">
-              <caret line="104" column="20" selection-start-line="104" selection-start-column="20" selection-end-line="104" selection-end-column="20" />
             </state>
           </provider>
         </entry>
@@ -171,6 +178,9 @@
         <option value="$PROJECT_DIR$/apps/profiles/apps.py" />
         <option value="$PROJECT_DIR$/apps/profiles/signals.py" />
         <option value="$PROJECT_DIR$/apps/profiles/admin.py" />
+        <option value="$PROJECT_DIR$/apps/ratings/serializers.py" />
+        <option value="$PROJECT_DIR$/apps/ratings/admin.py" />
+        <option value="$PROJECT_DIR$/apps/ratings/models.py" />
       </list>
     </option>
   </component>
@@ -211,6 +221,12 @@
               <item name="estate-src" type="462c0819:PsiDirectoryNode" />
               <item name="apps" type="462c0819:PsiDirectoryNode" />
               <item name="profiles" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="estate-src" type="b2602c69:ProjectViewProjectNode" />
+              <item name="estate-src" type="462c0819:PsiDirectoryNode" />
+              <item name="apps" type="462c0819:PsiDirectoryNode" />
+              <item name="ratings" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="estate-src" type="b2602c69:ProjectViewProjectNode" />
@@ -325,23 +341,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/apps/ratings/apps.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="6" lean-forward="true" selection-start-line="6" selection-end-line="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/apps/users/apps.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="6" lean-forward="true" selection-start-line="6" selection-end-line="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/apps/__init__.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/real_estate/settings/development.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="135">
@@ -541,16 +540,6 @@
     <entry file="file://$USER_HOME$/.pyenv/versions/real_state/lib/python3.9/site-packages/django_countries/static/flags/bd.gif">
       <provider selected="true" editor-type-id="images" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/apps/common/models.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="11" column="23" selection-start-line="11" selection-start-column="23" selection-end-line="11" selection-end-column="23" />
-          <folding>
-            <element signature="e#0#28#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/apps/users/models.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="380">
@@ -672,6 +661,46 @@
     <entry file="file://$PROJECT_DIR$/logs/real_estate.log">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-1770" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/apps/common/models.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="4" column="6" selection-start-line="4" selection-start-column="6" selection-end-line="4" selection-end-column="6" />
+          <folding>
+            <element signature="e#0#28#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/apps/ratings/admin.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="45">
+          <caret line="3" lean-forward="true" selection-start-line="3" selection-end-line="3" />
+          <folding>
+            <element signature="e#0#32#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/apps/ratings/serializers.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="16" column="38" lean-forward="true" selection-start-line="16" selection-start-column="38" selection-end-line="16" selection-end-column="38" />
+          <folding>
+            <element signature="e#0#39#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/apps/ratings/models.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="380">
+          <caret line="30" column="5" lean-forward="true" selection-start-line="30" selection-start-column="5" selection-end-line="30" selection-end-column="5" />
+          <folding>
+            <element signature="e#0#28#0" expanded="true" />
+          </folding>
+        </state>
       </provider>
     </entry>
   </component>

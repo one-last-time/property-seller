@@ -22,3 +22,7 @@ from django.conf import settings
 urlpatterns = [
     path('admin/', admin.site.urls),
 ]+static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
+
+admin.site.site_header = 'Real Estate Admin'
+admin.site.site_title = 'Real Estate Admin'
+admin.site.index_title = 'Welcome to Real Estate Portal'

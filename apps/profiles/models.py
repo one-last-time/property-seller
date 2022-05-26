@@ -13,6 +13,7 @@ class Gender(models.TextChoices):
     FEMALE = "FEMALE", _('Female')
     OTHER = "OTHER", _("Other")
 
+
 class Profile(TimeStampedUUIDModel):
     user = models.OneToOneField(User, related_name='profile', on_delete=models.CASCADE)
     phone_number = PhoneNumberField(verbose_name=_('Phone Number'), max_length=30)

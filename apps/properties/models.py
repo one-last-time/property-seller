@@ -28,10 +28,15 @@ class PropertyType(models.TextChoices):
 
 
 class Property(TimeStampedUUIDModel):
-    user = models.ForeignKey(User, verbose_name=_('Agnet, seller or buyer'), related_name='agent_buyer', on_delete=models.DO_NOTHING)
+    user = models.ForeignKey(
+        User,
+        verbose_name=_("Agent,Seller or Buyer"),
+        related_name="agent_buyer",
+        on_delete=models.DO_NOTHING,
+    )
     title = models.CharField(verbose_name=_('Property Title'), max_length=250)
-    slug = AutoSlugField(populate_from=_('title'), unique=True, always_update=True)
-    ref_code = models.CharField(verbose_name=_('Property Reference Code'), max_length=100)
+    slug = AutoSlugField(populate_from='title', unique=True, always_update=True)
+    ref_code = models.CharField(verbose_name=_('Property Reference Code'), max_length=100, unique=True, blank=True)
     description = models.TextField(verbose_name=_('Description'), default='Default Description')
     country = CountryField(verbose_name=_('Country'), default='BD', blank_label='Select Country', help_text='Select Country')
     city = models.CharField(verbose_name=_('City'), max_length=120, default='Dhaka')
@@ -41,8 +46,16 @@ class Property(TimeStampedUUIDModel):
         verbose_name=_("Plot Area(m^2)"), max_digits=8, decimal_places=2, default=0.0
     )
     property_number = models.IntegerField(verbose_name=_('Property Number'), validators=[MinValueValidator(1)], default=999)
-    price = models.DecimalField(verbose_name=_('Price'), max_digits=8, decimal_places=2, default=0.0)
-    tax = models.DecimalField(verbose_name=_('Tax'), max_digits=6, decimal_places=2, default=0.15, help_text='Tax percent')
+    price = models.DecimalField(
+        verbose_name=_("Price"), max_digits=8, decimal_places=2, default=0.0
+    )
+    tax = models.DecimalField(
+        verbose_name=_("Property Tax"),
+        max_digits=6,
+        decimal_places=2,
+        default=0.15,
+        help_text="property tax charged",
+    )
     total_floors = models.IntegerField(verbose_name=_('Total Floors'), default=0)
     bedrooms = models.IntegerField(verbose_name=_('Bedrooms'), default=0)
     bathrooms = models.IntegerField(verbose_name=_('Bathrooms'), default=0)
@@ -102,8 +115,10 @@ class Property(TimeStampedUUIDModel):
 
     def save(self, *args, **kwargs):
         self.title = str.title(self.title)
-        self.description = str.description(self.description)
-        self.ref_code = "".join(random.choices(string.ascii_uppercase+string.digits, k=10))
+        self.description = str.capitalize(self.description)
+        self.ref_code = "".join(
+            random.choices(string.ascii_uppercase + string.digits, k=10)
+        )
         super(Property, self).save(*args, **kwargs)
 
     @property
